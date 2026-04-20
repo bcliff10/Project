@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soccer Passion Page</title>
+    <link rel="" href="S">
+    <style> 
+/* Import modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Base styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f8;
+    color: #1a1a1a;
+}
+
+/* Navigation */
+.nav {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Make links bigger + spaced nicely */
+.nav-link {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr; /* stack vertically */
+    }
+
+    .tableau-wrapper {
+        height: 60vh; /* slightly smaller on mobile */
+    }
+}
+.nav-link:hover {
+    background-color: #e8f5e9;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #2e7d32, #66bb6a);
+    color: white;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Content Cards */
+..content {
+    max-width: 1600px;   /* bigger than before */
+    width: 95%;          /* uses more screen */
+    margin: 40px auto;   /* still centered */
+    padding: 40px;
+}
+/* Headings */
+h2 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+/* Lists */
+ol {
+    padding-left: 20px;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+/* Image */
+.image {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+/* Video + iframe */
+iframe {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+/* Anchor link */
+a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    background: #111;
+    color: white;
+    font-size: 14px;
+}
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<div class="nav">
+    <a href="index.html" class="nav-link">⬅ Back to Professional Page</a>
+    <a href="Sylesheet.html" class="nav-link" target="_blank">View Stylesheet</a>
+</div>
+
+<!-- Header -->
+<div class="header">
+    <h1 id="top">Soccer ⚽</h1>
+    <p>The world's most popular sport</p>
+</div>
+
+<!-- About Section -->
+<div class="content">
+    <h2>Why I Love Soccer</h2>
+    <p> Soccer is exciting, fast-paced, and played all around the world. It brings people together and creates unforgettable moments.
+    
+Soccer has always stood out to me because of how simple yet powerful it is. All you really need is a ball and some space, but it turns into something so much bigger—competition, teamwork, and pure excitement. I love how fast the game moves and how every second matters. One small moment can completely change the outcome, which makes it intense and fun to watch and play. It also brings people together from different backgrounds, and there’s something really cool about being part of a sport that connects so many people around the world.
+
+    </p>
+
+    <!-- Ordered list with embedded unordered list -->
+    <h3>Top Reasons Soccer is Amazing:</h3>
+    <ol>
+        <li>It’s global
+            <ul>
+                <li>Played in almost every country</li>
+                <li>World Cup unites nations</li>
+            </ul>
+        </li>
+        <li>It’s exciting</li>
+        <li>It builds teamwork</li>
+        <li>It requires skill and strategy</li>
+    <li>Anyone can play it anywhere</li>
+    <li>It creates unforgettable moments and highlights</li>
+    </ol>
+</div>
+
+<!-- Image Section -->
+<div class="content">
+    <h2>The GOAT Messi Playing in an FC Barcelona game!</h2>
+
+    <!-- HOW TO ADD YOUR OWN IMAGE -->
+    <!-- Replace "images/soccer.jpg" with your own file -->
+    <img src="assets/img/Messi.jpg" alt="Soccer Game" class="image">
+
+</div>
+
+<!-- YouTube Video -->
+<div class="content">
+    <h2>Watch Soccer Highlights</h2>
+
+    <!-- YouTube Embed -->
+   <iframe width="560" height="315" 
+    src="https://www.youtube-nocookie.com/embed/A-r9sj7zHJ4?si=kkwe4JGIUmBQt7kE" 
+    title="YouTube video player" 
+    frameborder="0" allow="accelerometer;
+     autoplay; clipboard-write; encrypted-media; gyroscope;
+      picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="content">
+    <h2>My First Year Playing Soccer Age 4</h2>
+<img src="assets/img/FirstTime.jpeg" alt="Soccer Game" class="image">
+    <!-- Replace this with your own Tableau embed -->
+    
+</div>
+
+<!-- Anchor Section -->
+<div class="content">
+    <h2>Learn More</h2>
+    <p>Jump back to the top of the page:</p>
+    <a href="#top">Go to Top</a>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p> &copy; Bella Clifford 2026 ⚽</p>
+</div>
+
+</body>
+</html>

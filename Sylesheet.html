@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Soccer Analytics Dashboard</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="styles.css">
+<style> 
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f4f6f8;
+    color: #1a1a1a;
+}
+
+/* NAV */
+.nav {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav a {
+    color: #1b5e20;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1b5e20, #43a047);
+    color: white;
+}
+
+/* MAIN LAYOUT (3 DIV STRUCTURE) */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    gap: 20px;
+    width: 100%;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+/* SIDE PANELS */
+.side-panel {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* MAIN TABLEAU AREA */
+.main-panel {
+    background: white;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* TEXT */
+h1, h2 {
+    color: #1b5e20;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* TABLEAU WRAPPER */
+.tableau-wrapper {
+    width: 100%;
+    height: 85vh; /* MAKES IT THE FOCUS */
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+    margin-top: 40px;
+} 
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<div class="nav">
+    <a href="index.html">⬅ Back to Professional Pages</a>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Soccer Analytics Dashboard ⚽</h1>
+    <p>Interactive data visualization of MLS performance</p>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="layout">
+
+    <!-- LEFT INFO PANEL (DIV #1) -->
+    <div class="side-panel">
+
+        <h2>About This Data</h2>
+
+        <p>
+            This dashboard displays live-style MLS data visualizations using Tableau Public.
+            It highlights team performance, trends, and statistical insights.
+        </p>
+
+        <h3>Why it matters:</h3>
+
+        <ul>
+            <li>Shows real-world soccer analytics</li>
+            <li>Helps understand team performance</li>
+            <li>Makes sports data visual and interactive</li>
+        </ul>
+
+    
+
+    </div>
+
+    <!-- TABLEAU MAIN AREA (DIV #2 - BIGGEST SECTION) -->
+    <div class="main-panel" id="tableau">
+
+        <div class="tableau-wrapper">
+
+            <!-- YOUR TABLEAU EMBED (kept exactly, just resized) -->
+            <div class='tableauPlaceholder' id='viz1776643659667' style='position: relative'>
+
+                <noscript>
+                    <a href='#'>
+                        <img alt='MLS' src='https://public.tableau.com/static/images/MR/MRWMHTG9F/1_rss.png' />
+                    </a>
+                </noscript>
+
+                <object class='tableauViz' style='display:none;'>
+
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='path' value='shared/MRWMHTG9F' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/MR/MRWMHTG9F/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+
+                </object>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT INFO PANEL (DIV #3) -->
+    <div class="side-panel">
+
+        <h2>Soccer Insight</h2>
+
+        <p>
+            Soccer is not just a sport—it is a global data ecosystem.
+            Every match generates statistics that can be analyzed to improve performance.
+        </p>
+
+        <p>
+            This visualization helps bring those numbers to life.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>Created for Soccer Analytics Project</p>
+</div>
+
+<!-- TABLEAU SCRIPT -->
+<script type='text/javascript'>
+    var divElement = document.getElementById('viz1776643659667');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = '85vh'; /* BIG = MAIN FOCUS */
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+</body>
+</html>
